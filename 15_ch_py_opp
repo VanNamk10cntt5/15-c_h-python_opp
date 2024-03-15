@@ -1,0 +1,110 @@
+
+1. OOP là gì và tại sao nó quan trọng trong Python?
+
+OOP, hay Lập trình hướng đối tượng, là một mô hình lập trình được sử dụng trong nhiều ngôn ngữ, bao gồm cả Python. Trong OOP, bạn có thể mô hình hóa các khái niệm trong thế giới thực bằng cách sử dụng các lớp và đối tượng. Bạn có thể chia các vấn đề phức tạp thành những phần nhỏ hơn, dễ quản lý hơn. Điều này làm cho mã có thể tái sử dụng, bảo trì và mở rộng được. 
+
+Trong Python, OOP rất quan trọng vì nó cho phép bạn viết mã có cấu trúc và hiệu quả hơn. OOP trong Python hỗ trợ khả năng sử dụng lại mã thông qua tính kế thừa. Sử dụng OOP trong Python có thể giúp quá trình phát triển của bạn hiệu quả hơn và mã của bạn dễ đọc hơn.
+
+2. Lớp trong Python là gì?
+
+Một lớp trong Python giống như một bản thiết kế chi tiết để tạo các đối tượng. Một lớp định nghĩa các thuộc tính và phương thức chung cho tất cả các đối tượng được tạo ra từ nó. 
+
+Trong Python, bạn sử dụng từ khóa class để định nghĩa một lớp. 
+
+Các lớp giúp tổ chức mã bằng cách nhóm các thuộc tính và chức năng liên quan, thúc đẩy khả năng sử dụng lại và tính mô đun. Ví dụ: nếu bạn đang tạo một chương trình để quản lý thư viện, bạn có thể có các lớp dành cho sách, tác giả và người mượn, mỗi lớp có các thuộc tính và phương thức cụ thể.
+
+3. Đối tượng trong Python là gì?
+
+Một đối tượng trong Python là một thể hiện của một lớp. Bạn có thể coi nó như một sự hiện thực hóa cụ thể của bản thiết kế do lớp học cung cấp. 
+
+Một đối tượng chứa dữ liệu ở dạng thuộc tính và mã ở dạng phương thức. Khi bạn tạo một đối tượng, về cơ bản bạn đang tạo một biến có tất cả các thuộc tính và hành vi được xác định trong lớp. 
+
+Ví dụ: nếu bạn có một lớp dành cho ô tô, một đối tượng có thể đại diện cho một ô tô cụ thể, chẳng hạn như Honda Civic, với các thuộc tính như màu sắc và tốc độ cũng như các phương thức như khởi động và dừng.
+
+4. Làm cách nào để tạo một phiên bản của một lớp trong Python?
+
+Trong Python, bạn có thể tạo một thể hiện của lớp bằng cách gọi lớp đó dưới dạng hàm và cung cấp các đối số cần thiết. Quá trình này được gọi là khởi tạo. Sau khi tạo một cá thể, bạn có thể truy cập các thuộc tính và phương thức được xác định trong lớp bằng cách sử dụng cá thể đó. 
+
+Ví dụ: nếu bạn có một lớp có tên Dog , bạn có thể tạo một thể hiện của lớp đó bằng cách viết my_dog = Dog() . Bây giờ, my_dog là một đối tượng của lớp Dog và bạn có thể truy cập các thuộc tính và phương thức của nó thông qua biến my_dog . Điều này cho phép bạn thể hiện các thực thể cụ thể trong thế giới thực trong mã của mình.
+
+5. Hàm tạo trong lớp Python là gì?
+
+Trong Python, hàm tạo là một phương thức đặc biệt dùng để khởi tạo các đối tượng. Bạn có thể coi nó như những hướng dẫn chi tiết để tạo các đối tượng. 
+
+Khi bạn tạo một thể hiện của một lớp, phương thức xây dựng __init__ , sẽ tự động được gọi. Nó cho phép bạn thiết lập các thuộc tính hoặc thực thi bất kỳ mã thiết lập nào cần thiết cho đối tượng.
+
+Nếu bạn không xác định hàm tạo trong lớp của mình, Python sẽ cung cấp hàm tạo mặc định. Tuy nhiên, việc xác định hàm tạo của riêng bạn sẽ mang lại cho bạn nhiều quyền kiểm soát hơn đối với quá trình khởi tạo đối tượng.
+
+6. Công cụ trang trí trong Python là gì? Nó liên quan đến OOP như thế nào?
+
+Trình trang trí trong Python là một hàm mà bạn có thể sử dụng để sửa đổi hoặc mở rộng hành vi của các hàm hoặc phương thức khác mà không cần thay đổi mã của chúng. Trong ngữ cảnh của OOP, trình trang trí có thể được sử dụng để thêm chức năng cho các phương thức trong các lớp, chẳng hạn như ghi nhật ký hoặc kiểm soát truy cập. 
+
+Bạn có thể coi các trình trang trí như các hàm bao quanh một hàm hoặc phương thức. Khi bạn gọi một hàm được trang trí, mã của trình trang trí sẽ chạy trước, cho phép bạn thực hiện các hành động trước hoặc sau hàm ban đầu. Nó giúp giữ mã sạch và tuân thủ nguyên tắc tái sử dụng OOP.
+
+7. Mục đích của từ khóa self trong các phương thức là gì?
+
+Từ khóa self trong Python được sử dụng trong một lớp để chỉ phiên bản của chính đối tượng đó. Khi bạn định nghĩa một phương thức bên trong một lớp, tham số đầu tiên thường được đặt tên là self . Nó giúp bạn truy cập các thuộc tính và phương thức của lớp trong ngữ cảnh của đối tượng hiện tại. 
+
+Ví dụ: bạn có thể sử dụng self.name để chỉ thuộc tính tên của đối tượng. 
+
+Khi gọi một phương thức, bạn không cần phải truyền đối số self ; Python tự động gửi tham chiếu đối tượng hiện tại tới phương thức.
+
+8. Tính kế thừa được triển khai trong Python như thế nào?
+
+Kế thừa cho phép một lớp kế thừa các thuộc tính và phương thức từ một lớp khác. Bạn có thể tạo một lớp mới – được gọi là lớp con – dựa trên lớp hiện có – được gọi là lớp cha – và thêm các tính năng mới hoặc sửa đổi các tính năng hiện có. 
+
+Để triển khai tính kế thừa trong Python, bạn định nghĩa lớp mới và đặt tên của lớp cha trong ngoặc đơn. 
+
+Ví dụ: nếu bạn muốn một lớp Dog kế thừa từ một lớp Animal , bạn sẽ viết class Dog(Animal): . Bằng cách này, lớp Dog sẽ có quyền truy cập vào tất cả các thuộc tính và phương thức được xác định trong Animal , cho phép sử dụng lại mã và tổ chức tốt hơn.
+
+9. Công dụng của hàm super() là gì ?
+
+Hàm super() của Python được sử dụng trong một lớp để gọi một phương thức từ lớp cha, thường là trong bối cảnh ghi đè phương thức. 
+
+Nếu bạn có một phương thức trong lớp con có cùng tên với một phương thức trong lớp cha, bạn có thể sử dụng super() để gọi phương thức cha trong phương thức con. Điều này đặc biệt hữu ích khi bạn muốn mở rộng hoặc sửa đổi hành vi của phương thức cha trong lớp con. 
+
+Bằng cách sử dụng super() , bạn đảm bảo rằng mã của bạn tuân theo hệ thống phân cấp kế thừa. Nó cũng làm cho mã dễ bảo trì hơn vì những thay đổi trong lớp cha có thể dễ dàng được truyền sang các lớp con.
+
+10. Mục đích của trình trang trí @property là gì ?
+
+Trong Python, trình trang trí @property cho phép bạn coi một phương thức là một thuộc tính của lớp. Bằng cách sử dụng điều này, bạn có thể tạo một phương thức "getter", cho phép bạn truy cập một phương thức lớp như thể đó là một thuộc tính mà không cần phải viết dấu ngoặc đơn khi bạn gọi nó. Điều này có nghĩa là bạn có thể kiểm soát cách truy cập thuộc tính mà không trực tiếp để lộ nó. 
+
+Trình trang trí @property cung cấp cách triển khai tính năng đóng gói - một khái niệm chính trong Lập trình hướng đối tượng (OOP). Nó giúp quản lý các thuộc tính của một lớp và làm cho mã dễ đọc hơn.
+
+11. Làm cách nào bạn có thể đạt được tính đa kế thừa trong Python?
+
+Đa kế thừa trong Python có nghĩa là một lớp có thể kế thừa các đặc điểm và tính năng từ nhiều lớp cha. Bạn có thể đạt được điều này bằng cách định nghĩa một lớp có nhiều hơn một lớp cha bên trong dấu ngoặc đơn trong định nghĩa lớp. Điều này cho phép lớp dẫn xuất truy cập các thuộc tính và phương thức từ tất cả các lớp cha của nó. 
+
+Mặc dù điều này có thể làm cho mã linh hoạt và mạnh mẽ hơn nhưng bạn nên sử dụng nó một cách thận trọng. Đa kế thừa có thể dẫn đến cấu trúc lớp phức tạp.
+
+12. Phương thức tĩnh là gì và nó khác với phương thức lớp như thế nào?
+
+Một phương thức tĩnh trong Python thuộc về một lớp chứ không phải là một thể hiện của lớp đó. Bạn có thể định nghĩa nó bằng cách sử dụng trang trí @staticmethod . Nó không yêu cầu tham chiếu đến lớp hoặc thể hiện của nó và có thể được gọi trên chính lớp đó. Không giống như các phương thức instance thông thường, nó không lấy tham số self . 
+
+Mặt khác, một phương thức lớp được định nghĩa bằng trình trang trí @classmethod và lấy tham chiếu đến chính lớp đó làm tham số đầu tiên - thường được đặt tên là “cls”. Nó có thể truy cập và sửa đổi các thuộc tính cấp lớp, trong khi phương thức tĩnh thì không. 
+
+Phương thức lớp linh hoạt hơn vì các lớp con có thể ghi đè lên nó, trong khi phương thức tĩnh không thay đổi.
+
+13. Bạn triển khai các lớp và phương thức trừu tượng trong Python như thế nào?
+
+Trong Python, bạn có thể triển khai các lớp và phương thức trừu tượng bằng mô-đun ABC . Trước tiên, bạn sẽ nhập mô-đun rồi tạo một lớp kế thừa từ ABC , viết tắt của lớp cơ sở trừu tượng. 
+
+Trong lớp này, bạn có thể định nghĩa các phương thức trừu tượng bằng cách sử dụng trình trang trí @abstractmethod . Các phương thức trừu tượng này đóng vai trò như một bản thiết kế chi tiết cho các lớp khác, buộc các lớp dẫn xuất phải cung cấp cách triển khai cụ thể các phương thức này. 
+
+Nếu lớp dẫn xuất không triển khai các phương thức trừu tượng thì sẽ xảy ra lỗi khởi tạo.
+
+14. Làm cách nào để ngăn chặn việc ghi đè phương thức trong Python?
+
+Trong Python, ghi đè phương thức là một tính năng phổ biến cho phép một lớp con cung cấp cách triển khai khác của một phương thức được xác định trong siêu lớp của nó. Tuy nhiên, nếu bạn muốn ngăn việc ghi đè phương thức, bạn có thể làm như vậy bằng cách xác định phương thức đó là riêng tư. 
+
+Bằng cách đặt trước tên của phương thức bằng dấu gạch dưới kép ( __ ), bạn đặt nó ở chế độ riêng tư đối với lớp và nó không thể bị ghi đè trong lớp con. 
+
+Mặc dù không được thực thi nghiêm ngặt, quy ước này báo hiệu rằng phương thức này không được truy cập hoặc ghi đè bên ngoài lớp và nó giúp duy trì tính toàn vẹn của phương thức ban đầu trong hệ thống phân cấp.
+
+15. Tính đa hình hoạt động như thế nào trong Python?
+
+Tính đa hình trong Python cho phép các đối tượng khác nhau được coi là các thể hiện của cùng một lớp, ngay cả khi chúng thuộc các lớp khác nhau. Bạn có thể đạt được điều này thông qua tính kế thừa, trong đó một lớp con có thể có các phương thức có cùng tên với các phương thức trong lớp cha. 
+
+Khi bạn gọi một phương thức trên một đối tượng, Python sẽ tự động sử dụng phương thức đúng dựa trên lớp của đối tượng, ngay cả khi đối tượng được tham chiếu bởi một biến thuộc loại siêu lớp. 
+
+Điều này cho phép mã linh hoạt hơn và có thể tái sử dụng, vì bạn có thể viết các hàm hoạt động với các lớp khác nhau, miễn là chúng tuân theo cùng một giao diện hoặc chữ ký phương thức.
